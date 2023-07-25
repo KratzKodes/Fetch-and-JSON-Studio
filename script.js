@@ -36,7 +36,8 @@ window.addEventListener("load", function(){
           astroCount++;
           astroCrewHTML += astroHTML;
         }
-        astroContainer.innerHTML += `<div> ${astroCount} </div>`
+        astroContainer.innerHTML += `<h4 style= "color:grey"> Astronaut Count: ${astroCount} </h4>`
+
         astroContainer.innerHTML +=astroCrewHTML;
     })
     
