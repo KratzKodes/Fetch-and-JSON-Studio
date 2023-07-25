@@ -13,7 +13,8 @@ window.addEventListener("load", function(){
         
         for (let i = 0; i < astroSorted.length; i++) {
           let active = "";
-          if (astroSorted[i].active) {
+          let astronaut = astroSorted[i];
+          if (astronaut.active) {
             {
               active = 'style = "color:green"';
             }
@@ -22,16 +23,14 @@ window.addEventListener("load", function(){
             
             <div class="astronaut">
                 <div class="bio">
-                    <h3>${astroSorted[i].firstName} ${
-            astroSorted[i].lastName
-          }</h3>
+                    <h3>${astronaut.firstName} ${astronaut.lastName}</h3>
                     <ul>
-                        <li>Hours in space: ${astroSorted[i].hoursInSpace}</li>
-                        <li ${active}>Active: ${astroSorted[i].active}</li>
-                        <li>Skills:${astroSorted[i].skills.join(", ")}</li>
+                        <li>Hours in space: ${astronaut.hoursInSpace}</li>
+                        <li ${active}>Active: ${astronaut.active}</li>
+                        <li>Skills:${astronaut.skills.join(", ")}</li>
                     </ul>
                 </div>
-            <img class="avatar" src="${astroSorted[i].picture}">
+            <img class="avatar" src="${astronaut.picture}">
             </div>
             `;
           astroCount++;
