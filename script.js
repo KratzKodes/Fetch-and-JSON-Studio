@@ -27,7 +27,7 @@ window.addEventListener("load", function(){
                     <ul>
                         <li>Hours in space: ${astronaut.hoursInSpace}</li>
                         <li ${active}>Active: ${astronaut.active}</li>
-                        <li>Skills:${astronaut.skills.join(", ")}</li>
+                        <li>Skills: ${astronaut.skills.join(", ")}</li>
                     </ul>
                 </div>
             <img class="avatar" src="${astronaut.picture}">
